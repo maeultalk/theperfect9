@@ -1,8 +1,8 @@
-package com.warrenjo.theperfect9.adapter;
+package com.warrenjo.theperfect9.activity.lineup;
 
 
-import com.warrenjo.theperfect9.activity.main.lineup.batter.BatterLineupFragment;
-import com.warrenjo.theperfect9.activity.main.lineup.pitcher.PitcherLineupFragment;
+import com.warrenjo.theperfect9.activity.lineup.batter.BatterLineupFragment;
+import com.warrenjo.theperfect9.activity.lineup.pitcher.PitcherLineupFragment;
 
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
@@ -12,11 +12,11 @@ import androidx.fragment.app.FragmentPagerAdapter;
  * A {@link FragmentPagerAdapter} that returns a fragment corresponding to
  * one of the sections/tabs/pages.
  */
-public class SectionsPagerAdapter extends FragmentPagerAdapter {
+public class LineupPagerAdapter extends FragmentPagerAdapter {
 
     private Fragment batterLineupFragment, pitcherLineupFragment;
 
-    public SectionsPagerAdapter(FragmentManager fm) {
+    public LineupPagerAdapter(FragmentManager fm) {
         super(fm);
     }
 

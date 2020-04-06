@@ -1,4 +1,4 @@
-package com.warrenjo.theperfect9.activity.main.lineup.pitcher;
+package com.warrenjo.theperfect9.activity.lineup.pitcher;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -7,9 +7,8 @@ import android.view.ViewGroup;
 import android.widget.ListView;
 
 import com.warrenjo.theperfect9.R;
-import com.warrenjo.theperfect9.adapter.LineupAdapter;
+import com.warrenjo.theperfect9.activity.lineup.batter.BatterLineupAdapter;
 
-import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
 public class PitcherLineupFragment extends Fragment {
@@ -21,10 +20,10 @@ public class PitcherLineupFragment extends Fragment {
         View root = inflater.inflate(R.layout.fragment_batter_lineup, container, false);
 
         ListView listview ;
-        LineupAdapter adapter;
+        BatterLineupAdapter adapter;
 
         // Adapter 생성
-        adapter = new LineupAdapter() ;
+        adapter = new BatterLineupAdapter() ;
 
         // 리스트뷰 참조 및 Adapter달기
         listview = (ListView) root.findViewById(R.id.listView);

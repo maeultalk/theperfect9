@@ -1,4 +1,4 @@
-package com.warrenjo.theperfect9.adapter;
+package com.warrenjo.theperfect9.activity.lineup.batter;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
@@ -14,12 +14,12 @@ import com.warrenjo.theperfect9.model.LineupPlayer;
 
 import java.util.ArrayList;
 
-public class LineupAdapter extends BaseAdapter {
+public class BatterLineupAdapter extends BaseAdapter {
     // Adapter에 추가된 데이터를 저장하기 위한 ArrayList
     private ArrayList<LineupPlayer> itemList = new ArrayList<LineupPlayer>() ;
 
     // LineupAdapter의 생성자
-    public LineupAdapter() {
+    public BatterLineupAdapter() {
 
     }
 
