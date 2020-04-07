@@ -3,6 +3,7 @@ package com.warrenjo.theperfect9.activity.lineup;
 import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
+import android.widget.RelativeLayout;
 
 import com.google.android.material.tabs.TabLayout;
 import com.warrenjo.theperfect9.R;
@@ -21,7 +22,8 @@ public class LineupActivity extends BaseActivity {
         setTitle("라인업");
 
         // 구글 애드몹 셋팅
-        setAd();
+        RelativeLayout adLayout = (RelativeLayout) findViewById(R.id.adLayout);
+        setAd(adLayout);
 
         setViewPager();
     }

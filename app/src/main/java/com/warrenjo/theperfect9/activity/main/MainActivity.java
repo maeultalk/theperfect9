@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.RelativeLayout;
 
 import androidx.viewpager.widget.ViewPager;
 
@@ -23,7 +24,8 @@ public class MainActivity extends BaseActivity {
         setContentView(R.layout.activity_main);
 
        // 구글 애드몹 셋팅
-        setAd();
+        RelativeLayout adLayout = (RelativeLayout) findViewById(R.id.adLayout);
+        setAd(adLayout);
 
         setLayout();
         setOnClickListener();
