@@ -18,6 +18,7 @@ public class LineupActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lineup);
+        setTitle("라인업");
 
         // 구글 애드몹 셋팅
         setAd();
