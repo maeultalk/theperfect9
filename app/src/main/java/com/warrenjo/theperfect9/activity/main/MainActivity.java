@@ -22,8 +22,6 @@ public class MainActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // TODO: 2020-04-06 마스터에 추가
-
        // 구글 애드몹 셋팅
         setAd();
 
